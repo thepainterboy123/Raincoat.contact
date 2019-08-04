@@ -4,6 +4,13 @@
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <svg width="0" height="0"> 
+	<filter id="filter">
+		<feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="6" />
+		<feDisplacementMap in="SourceGraphic" scale="100" />
+	</filter>
+</svg>
 </head>
 
 <body>
@@ -35,7 +42,9 @@
 
       <nav>
       <ul>
-        <li><a href="https://www.raincoatrestorations.com"><b>Home</b></a></li>
+        <li><a href="https://www.raincoatrestorations.com"><div class="wrapper">
+	<div class="button _1">
+		<span>Home</span><div class="back"></div></a></li>
         <li><a href="prepworkpics.html">Prep Work Pics</a></li>
         <li><a href="#">Mid Way Pics</a></li>
         <li><a href="#">Completed Work</a></li>
